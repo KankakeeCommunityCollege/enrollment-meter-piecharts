@@ -1,4 +1,4 @@
-var CountNumbers = {currentHeadCount: 2301, previousHeadCount: 2400, currentCreditHours: 22634, previousCreditHours: 24100};
+var CountNumbers = {currentHeadCount: 2400, previousHeadCount: 2400, currentCreditHours: 22634, previousCreditHours: 24100};
 
 (function () {
   var graph = document.querySelector('#graph1'), //selects the graph blue circle
@@ -41,6 +41,9 @@ var CountNumbers = {currentHeadCount: 2301, previousHeadCount: 2400, currentCred
     stopLength = Math.ceil(strokeLength - (strokeLength * percentHeadcount)),
     textValue = strokeLength;
 
+  currentText.textContent = current;
+  previousText.textContent = previous;
+
   function animate () {
     if (offset > stopLength) {
       offset -= 5;
@@ -48,8 +51,6 @@ var CountNumbers = {currentHeadCount: 2301, previousHeadCount: 2400, currentCred
 
       graph.style.strokeDashoffset = offset;
       text.textContent = '-' + textValue + '%';
-      currentText.textContent = current;
-      previousText.textContent = previous;
       requestAnimationFrame(animate);
 
     }

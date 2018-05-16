@@ -12,10 +12,12 @@
 	$ git clone https://github.com/KankakeeCommunityCollege/enrollment-meter-piecharts.git
 	$ cd enrollment-meter-piecharts
 	$ npm install		// May need to prefix command with sudo (if not using NVM)
+  
+  Convert index.txt to a proper index.html page. Change the JavaScript link to the folder structure assets/js/index.js
 
 ## Development
-	$ server
+	Then run 
+  $ server
 
-## Production
-
-Copy index.html, and JavaScript
+This is pre gulp work flow stuff. I will set it up later to do the conversions to index.txt and link change later.
+Also, this needs to be made more flexible and have a positive number perspective as well.

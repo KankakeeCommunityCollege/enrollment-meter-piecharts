@@ -43,8 +43,8 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
 
   currentText.textContent = current;
   previousText.textContent = previous;
-  if(current < previous){
 
+  if(current < previous){
     text.textContent = '-' + Math.floor(percentHeadcount * 100) + '%'; //This is where number is put together as visual percentage
   } else if(current > previous){
     text.textContent = '+' + Math.floor((-(percentHeadcount)) * 100) + '%';

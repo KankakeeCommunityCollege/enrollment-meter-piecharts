@@ -44,7 +44,7 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
   currentText.textContent = current;
   previousText.textContent = previous;
   if(current < previous){
-    
+
     text.textContent = '-' + Math.floor(percentHeadcount * 100) + '%'; //This is where number is put together as visual percentage
   } else if(current > previous){
     text.textContent = '+' + Math.floor((-(percentHeadcount)) * 100) + '%';
@@ -57,14 +57,13 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
     currentLabel.style.fill = '#008000';
     currentText.style.fill = '#008000';
   }
-  
+
   function animate () {
     if (offset > stopLength) {
       offset -= 5;
       textValue = Math.floor((1 - offset / strokeLength) * 100);
 
       graph.style.strokeDashoffset = offset;
-      text.textContent = '-' + textValue + '%';
       requestAnimationFrame(animate);
 
     }
@@ -126,7 +125,7 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
 
   currentText.textContent = current;
   previousText.textContent = previous;
-  
+
   if(current < previous){
     text.textContent = '-' + Math.floor(percentCreditHours * 100) + '%'; //This is where number is put together as visual percentage
   } else if(current > previous){
@@ -140,7 +139,7 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
     currentLabel.style.fill = '#008000';
     currentText.style.fill = '#008000';
   }
-  
+
   function animate () {
     if (offset > stopLength) {
       offset -= 5;

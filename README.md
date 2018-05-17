@@ -1,6 +1,9 @@
 # KCC Enrollment Meter Pie Charts
 
-#### Just simple enrollment meter and package json here
+#### Just simple enrollment meter and package json here.
+
+## Demo site
+[https://kankakeecommunitycollege.github.io/enrollment-meter-piecharts/](https://kankakeecommunitycollege.github.io/enrollment-meter-piecharts/)
 
 ## Requirements
 

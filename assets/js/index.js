@@ -1,4 +1,4 @@
-var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCreditHours: 21000, previousCreditHours: 21000};
+var CountNumbers = {currentHeadCount: 2300, previousHeadCount: 2400, currentCreditHours: 21000, previousCreditHours: 21000};
 
 (function () {
   var graph = document.querySelector('#graph1'), //selects the graph blue circle
@@ -15,11 +15,6 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
       graph.style.strokeDashoffset = offset;
       requestAnimationFrame(animate);
     }
-  }
-
-  function clear () {
-    offset = strokeLength;
-    animate();
   }
 
   setTimeout(animate, 1000);
@@ -69,11 +64,6 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
     }
   }
 
-  function clear () {
-    offset = strokeLength;
-    animate();
-  }
-
   setTimeout(animate, 1000);
 
 })();
@@ -96,11 +86,6 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
       requestAnimationFrame(animate);
 
     }
-  }
-
-  function clear () {
-    offset = strokeLength;
-    animate();
   }
 
   setTimeout(animate, 1000); //gives time to do animation
@@ -149,11 +134,6 @@ var CountNumbers = {currentHeadCount: 2500, previousHeadCount: 2400, currentCred
       requestAnimationFrame(animate);
 
     }
-  }
-
-  function clear () {
-    offset = strokeLength;
-    animate();
   }
 
   setTimeout(animate, 1000); //gives time to do animation

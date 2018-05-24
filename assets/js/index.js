@@ -1,4 +1,11 @@
-var CountNumbers = {currentHeadCount: 2300, previousHeadCount: 2400, currentCreditHours: 21000, previousCreditHours: 21000};
+var CountNumbers = {
+  currentHeadCount: 2300,
+  previousHeadCount: 2400,
+  currentCreditHours: 22000,
+  previousCreditHours: 20000
+};
+
+var term = 'Summer 2018'; //Term variable requested
 
 (function () {
   var graph = document.querySelector('#graph1'), //selects the graph blue circle
@@ -30,6 +37,7 @@ var CountNumbers = {currentHeadCount: 2300, previousHeadCount: 2400, currentCred
     currentLabel = document.querySelector('#headcount-currentLabel'),
     currentText = document.querySelector('#graph1-current'),
     previousText = document.querySelector('#graph1-previous'),
+    termText = document.querySelector('#graph1-term'),
     graphRadius = graph.r.baseVal.value,
     strokeLength = 2 * Math.PI * graphRadius,
     offset = strokeLength,
@@ -38,16 +46,17 @@ var CountNumbers = {currentHeadCount: 2300, previousHeadCount: 2400, currentCred
 
   currentText.textContent = current;
   previousText.textContent = previous;
+  termText.textContent = term;
 
   if(current < previous){
-    text.textContent = '-' + Math.floor(percentHeadcount * 100) + '%'; //This is where number is put together as visual percentage
+    text.textContent = '-' + Math.round(percentHeadcount * 100) + '%'; //This is where number is put together as visual percentage
   } else if(current > previous){
-    text.textContent = '+' + Math.floor((-(percentHeadcount)) * 100) + '%';
+    text.textContent = '+' + Math.round((-(percentHeadcount)) * 100) + '%';
     text.style.fill = '#008000';
     currentLabel.style.fill = '#008000';
     currentText.style.fill = '#008000';
   } else if(current === previous){
-    text.textContent = Math.floor(percentHeadcount * 100) + '%';
+    text.textContent = Math.round(percentHeadcount * 100) + '%';
     text.style.fill = '#008000';
     currentLabel.style.fill = '#008000';
     currentText.style.fill = '#008000';
@@ -101,6 +110,7 @@ var CountNumbers = {currentHeadCount: 2300, previousHeadCount: 2400, currentCred
     currentLabel = document.querySelector('#creditHours-currentLabel'),
     currentText = document.querySelector('#graph2-current'),
     previousText = document.querySelector('#graph2-previous'),
+    termText = document.querySelector('#graph2-term'),
     text = document.querySelector('#creditHoursPercent2'),
     graphRadius = graph.r.baseVal.value,
     strokeLength = 2 * Math.PI * graphRadius,
@@ -110,16 +120,17 @@ var CountNumbers = {currentHeadCount: 2300, previousHeadCount: 2400, currentCred
 
   currentText.textContent = current;
   previousText.textContent = previous;
+  termText.textContent = term;
 
   if(current < previous){
-    text.textContent = '-' + Math.floor(percentCreditHours * 100) + '%'; //This is where number is put together as visual percentage
+    text.textContent = '-' + Math.round(percentCreditHours * 100) + '%'; //This is where number is put together as visual percentage
   } else if(current > previous){
-    text.textContent = '+' + Math.floor((-(percentCreditHours)) * 100) + '%';
+    text.textContent = '+' + Math.round((-(percentCreditHours)) * 100) + '%';
     text.style.fill = '#008000';
     currentLabel.style.fill = '#008000';
     currentText.style.fill = '#008000';
   } else if(current === previous){
-    text.textContent = Math.floor(percentCreditHours * 100) + '%';
+    text.textContent = Math.round(percentCreditHours * 100) + '%';
     text.style.fill = '#008000';
     currentLabel.style.fill = '#008000';
     currentText.style.fill = '#008000';

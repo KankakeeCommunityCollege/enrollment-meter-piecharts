@@ -24,3 +24,9 @@ Temporary Items
 
 # Ignore node modules
 node_modules/
+
+# Don't push these--that would be bad
+.sass-cache
+
+# Yarn error log
+yarn-error.log

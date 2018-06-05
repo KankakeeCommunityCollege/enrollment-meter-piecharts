@@ -2,14 +2,34 @@
   "name": "enrollment-meter-piecharts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "jest"
+    "start": "bundle exec gulp",
+    "test": "jest",
+    "browsersync": "bundle exec gulp browsersync",
+    "sass": "bundle exec gulp sass",
+    "watch": "bundle exec gulp watch"
   },
   "author": "",
   "license": "",
   "devDependencies": {
-    "jest": "^22.4.3"
+    "autoprefixer": "^8.5.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^22.4.3",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0",
+    "require-dir": "^1.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.8.3",
+    "webpack-stream": "^4.0.1",
+    "yargs": "^11.1.0"
   },
   "dependencies": {}
 }

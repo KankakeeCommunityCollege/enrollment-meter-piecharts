@@ -1,4 +1,4 @@
-# KCC Enrollment Meter Pie Charts
+# KCC Enrollment Meter
 
 #### Just simple enrollment meter and package json here.
 This is pre gulp work flow stuff. I will set it up later to do the conversions to index.txt and link change later.

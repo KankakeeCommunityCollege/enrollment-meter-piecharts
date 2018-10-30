@@ -12,8 +12,8 @@ Also, this needs to be made more flexible and have a positive number perspective
 ### Installation
 
 ```sh
-git clone https://github.com/KankakeeCommunityCollege/enrollment-meter-piecharts.git
-cd enrollment-meter-piecharts
+git clone https://github.com/KankakeeCommunityCollege/enrollmentmeter.git
+cd enrollmentmeter
 npm install
 ````
 

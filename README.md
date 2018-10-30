@@ -3,7 +3,7 @@
 #### Just simple enrollment meter and package json here.
 
 ## Demo site
-[https://kankakeecommunitycollege.github.io/enrollment-meter-piecharts/](https://kankakeecommunitycollege.github.io/enrollment-meter-piecharts/)
+[https://kankakeecommunitycollege.github.io/enrollmentmeter/](https://kankakeecommunitycollege.github.io/enrollmentmeter/)
 
 ## Development
 	Then run 
